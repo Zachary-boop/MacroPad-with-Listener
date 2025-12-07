@@ -2,8 +2,8 @@
 Script Pour MacroPad
 
 Avant de rouler le script !! 
-- Changer le COMx dans le scipt PC
-- pip install serial
+ - Changer le COMx dans le scipt PC
+ - pip install serial
 
 Copier les fichiers CircuitPython dans le MacroPad
 
