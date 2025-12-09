@@ -14,7 +14,7 @@ ser = serial.Serial(
     timeout=1
 )
 
-LOG_FILE = r"C:\Users\royza\PythonScripts\serial_log.txt"
+LOG_FILE = #Path
 
 def log(message):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -31,10 +31,10 @@ try:
             line = ser.readline()
             if line:
                 decoded_line = line.decode('utf-8').strip()
-                log(f"Received: {decoded_line}")
+                #log(f"Received: {decoded_line}")
 
                 if decoded_line == "NOTEPAD_MACRO":
-                    log("Macro Clicked")
+                    #log("Macro Clicked")
                     subprocess.Popen(
                         [r"C:\Program Files\Notepad++\notepad++.exe"],
                         creationflags=subprocess.CREATE_NO_WINDOW
